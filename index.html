@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
+    <title>Document</title>
     <style>
-        .container{
-            border: 2px solid red;
+        .login-form-container{
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            border: 1px solid red;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;  
+            max-width: 50%;
             align-items: center;
-            height: 150px;
+            border: 2px solid red;
         }
-        .box{
-            /* display: flex; */
-            border: dashed green;
-            height: 100px;
-            width: 40px;
+        .login-form input{
+            margin-top: 20px;
         }
-
-        
     </style>
 </head>
 <body>
-    <h1>My Flexbox</h1>
-    <div class="container">
-        <div class="box">Box-1</div>
-        <div class="box">Box-2</div>
-        <div class="box">Box-3</div>
-    </div>
+   <section class="login-form-container">
+     <form class="login-form">
+        <h2>Please Login here</h2>
+        <input type="text" placeholder="Your Name" name="" id="" required>
+        <input type="gmail"  placeholder="Your Gmail" id="" required>
+        <input type="password" placeholder="Your password" required>
+        <input type="button" value="Login">
+    </form>
+   </section>
 </body>
 </html>
